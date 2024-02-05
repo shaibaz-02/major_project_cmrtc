@@ -1,0 +1,169 @@
+
+* {
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', cursive, sans-serif;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.mainbox, .result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    width: 765px;
+    height: 465px;
+    border: 3.5px rgb(0, 0, 0) solid;
+    border-radius: 10px;
+    background: rgba(239, 239, 239, 0.577);
+}
+
+.result {
+    display: none;
+}
+
+.mainbox form, .result form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+}
+
+.mainbox form span {
+    font-size: 35px;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin: 0px 35px;
+}
+
+.infoimg {
+    width: 85px;
+    height: 85px;
+    margin: 0px 7px;
+}
+
+.mainInp {
+    font-size: 25px;
+}
+
+.heightUnitsInp {
+    width: 65px;
+    height: 35px;
+    font-size: 20px;
+    margin: 0px 25px;
+}
+
+.mainbox header {
+    text-align: left;
+    width: 100%;
+    height: 75px;
+    background: rgba(255, 255, 255, 0.662);
+}
+
+.title, .resultText {
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.result h2 {
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.resultText {
+    margin: 0 50px;
+    text-transform: none;
+}
+
+.mainbutton, .CloseBtn {
+    width: 200px;
+    height: 100px;
+    border: blue 5px solid;
+    font-size: 45px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.CloseBtn:hover, .mainbutton:hover {
+    background: rgb(197, 195, 195);
+}
+
+.CloseBtn:active, .mainbutton:active {
+    border-color: rgb(9, 9, 177);
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+    .mainbox {
+        width: 445px;
+        height: 650px;
+    }
+
+    .mainbox header {
+        text-align: center;
+        height: 125px;
+        background: transparent;
+    }
+
+    .mainbox form, .result form {
+        flex-direction: column;
+    }
+
+    .mainInp {
+        text-align: center;
+        margin: 50px 0px;
+    }
+
+    .title {
+        font-size: 45px;
+        font-weight: bolder;
+    }
+
+    .heightUnitsInp {
+        width: 100px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .infoimg  {
+        margin: 10px;
+    }
+
+    .mainbox form span {
+        font-size: 45px;
+        font-weight: bold;
+    }
+
+    .result {
+        width: 445px;
+        height: 575px;
+    }
+
+    .result h2 {
+        font-size: 70px;
+    }
+}
